@@ -6,7 +6,6 @@
   <title>BABITA YADAV // Level 5 Backend Mage 🎮</title>
   
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Google Fonts: Fredoka & Luckiest Guy & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Luckiest+Guy&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
@@ -49,7 +48,6 @@
       background-image: radial-gradient(#18181B 1.5px, transparent 1.5px);
       background-size: 26px 26px;
     }
-
     .cartoon-box {
       background: #FFFFFF;
       border: 4px solid #18181B;
@@ -61,7 +59,6 @@
       transform: translate(-4px, -4px);
       box-shadow: 12px 12px 0px #18181B;
     }
-
     .squishy-btn {
       border: 3.5px solid #18181B;
       box-shadow: 6px 6px 0px #18181B;
@@ -78,7 +75,6 @@
       transform: translate(4px, 4px);
       box-shadow: 2px 2px 0px #18181B;
     }
-
     .floating-emoji {
       position: absolute;
       user-select: none;
@@ -88,7 +84,6 @@
       transition: transform 0.15s ease-out;
       z-index: 20;
     }
-
     @keyframes wiggle {
       0%, 100% { transform: rotate(-2deg); }
       50% { transform: rotate(2deg); }
@@ -96,11 +91,14 @@
     .wiggle-box {
       animation: wiggle 3s ease-in-out infinite;
     }
+    /* Auto-hide citations */
+    cite {
+      display: none !important;
+    }
   </style>
 </head>
 <body class="selection:bg-kawaiiPink selection:text-white relative min-h-screen">
 
-  <!-- Interactive Floating Emojis Layer -->
   <div id="emojiPlayground" class="fixed inset-0 pointer-events-none z-10 overflow-hidden"></div>
 
   <!-- Comic Navbar -->
@@ -142,11 +140,10 @@
     
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center min-h-[75vh]">
       
-      <!-- Left Info -->
       <div class="lg:col-span-7 space-y-6">
         
         <div class="inline-flex items-center gap-2 bg-kawaiiYellow border-[3.5px] border-inkBlack px-4 py-1.5 rounded-full shadow-comic-sm font-cartoon text-sm tracking-wide transform -rotate-1">
-          <span>🌟 LEVEL 5 JAVA BACKEND ARCHITECT &bull; 5+ YEARS XP</span>[cite: 1]
+          <span>🌟 LEVEL 5 JAVA BACKEND ARCHITECT &bull; 5+ YEARS XP</span>
         </div>
 
         <h1 class="font-cartoon text-5xl sm:text-7xl lg:text-8xl leading-[0.92] text-inkBlack uppercase">
@@ -157,26 +154,26 @@
         </h1>
 
         <p class="text-slate-800 text-lg sm:text-xl font-bold leading-relaxed max-w-2xl font-body">
-          Hi, main hoon Babita Yadav! Main high-scale Spring Boot Microservices, Apache Kafka event streams, aur super-optimized SQL database engines build karti hoon in BFSI domain[cite: 1]!
+          Hi, main hoon Babita Yadav! Main high-scale Spring Boot Microservices, Apache Kafka event streams, aur super-optimized SQL database engines build karti hoon in BFSI domain!
         </p>
 
         <!-- Stats Loot -->
         <div id="stats" class="grid grid-cols-3 gap-4 pt-2">
           <div class="cartoon-box p-4 bg-kawaiiYellow text-center transform -rotate-1">
             <div class="font-cartoon text-3xl sm:text-5xl text-inkBlack">+25%</div>
-            <div class="font-bold text-xs uppercase tracking-tight text-slate-800 mt-1">Throughput Speed[cite: 1]</div>
+            <div class="font-bold text-xs uppercase tracking-tight text-slate-800 mt-1">Throughput Speed</div>
           </div>
           <div class="cartoon-box p-4 bg-kawaiiCyan text-center transform rotate-1">
             <div class="font-cartoon text-3xl sm:text-5xl text-inkBlack">-30%</div>
-            <div class="font-bold text-xs uppercase tracking-tight text-slate-800 mt-1">DB Fetch Lag[cite: 1]</div>
+            <div class="font-bold text-xs uppercase tracking-tight text-slate-800 mt-1">DB Fetch Lag</div>
           </div>
           <div class="cartoon-box p-4 bg-kawaiiPink text-center text-white transform -rotate-1">
             <div class="font-cartoon text-3xl sm:text-5xl text-white drop-shadow-[3px_3px_0px_#18181B]">-40%</div>
-            <div class="font-bold text-xs uppercase tracking-tight text-white drop-shadow-[1px_1px_0px_#18181B] mt-1">Prod Bug Smashed[cite: 1]</div>
+            <div class="font-bold text-xs uppercase tracking-tight text-white drop-shadow-[1px_1px_0px_#18181B] mt-1">Prod Bug Smashed</div>
           </div>
         </div>
 
-        <!-- Buttons -->
+        <!-- Action Buttons -->
         <div class="flex flex-wrap gap-4 pt-4">
           <a href="#missions" class="squishy-btn px-8 py-4 bg-kawaiiGreen text-inkBlack text-xl tracking-wider hover:bg-emerald-300 flex items-center gap-2">
             <span>🎮 PLAY & VIEW QUESTS</span>
@@ -187,16 +184,15 @@
         </div>
       </div>
 
-      <!-- Right Column: Auto-Focus Avatar Card -->
+      <!-- Avatar Card -->
       <div class="lg:col-span-5 flex justify-center">
         <div class="cartoon-box p-7 w-full max-w-sm bg-white relative wiggle-box">
           
           <div class="flex justify-between items-center pb-3 border-b-3 border-inkBlack font-cartoon text-sm">
             <span class="bg-kawaiiOrange text-white px-2.5 py-1 rounded-xl border-2 border-inkBlack shadow-comic-sm">HERO CARD #0911</span>
-            <span class="text-kawaiiPurple font-bold">5+ YRS MASTER</span>[cite: 1]
+            <span class="text-kawaiiPurple font-bold">5+ YRS MASTER</span>
           </div>
 
-          <!-- Auto-Scaled Avatar Frame -->
           <div class="my-6 relative flex justify-center">
             <div class="w-52 h-52 rounded-3xl border-4 border-inkBlack bg-kawaiiYellow p-1.5 shadow-comic transform rotate-2 overflow-hidden relative group">
               <img src="babita.jpg" alt="Babita Yadav" 
@@ -212,7 +208,6 @@
             </div>
           </div>
 
-          <!-- Bars -->
           <div class="space-y-3 font-body font-bold text-xs">
             <div>
               <div class="flex justify-between mb-1">
@@ -246,7 +241,7 @@
           </div>
 
           <div class="mt-5 pt-3 border-t-3 border-inkBlack text-center font-cartoon text-sm text-slate-700">
-            📍 BASE STATION: MUMBAI, MH, INDIA[cite: 1]
+            📍 BASE STATION: MUMBAI, MH, INDIA
           </div>
 
         </div>
@@ -270,8 +265,8 @@
           <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-3 border-b-3 border-inkBlack pb-4">
             <div>
               <span class="bg-kawaiiGreen text-inkBlack text-xs font-bold px-3 py-1 rounded-xl border-2 border-inkBlack shadow-comic-sm">CURRENT ACTIVE BOSS RAID</span>
-              <h3 class="font-cartoon text-2xl sm:text-3xl text-inkBlack mt-2">Bank of America (via TCS)</h3>[cite: 1]
-              <p class="font-bold text-xs text-slate-600 font-mono">Sep 2025 – Present &bull; Lead Java Backend Developer</p>[cite: 1]
+              <h3 class="font-cartoon text-2xl sm:text-3xl text-inkBlack mt-2">Bank of America (via TCS)</h3>
+              <p class="font-bold text-xs text-slate-600 font-mono">Sep 2025 – Present &bull; Lead Java Backend Developer</p>
             </div>
             <div class="bg-white border-3 border-inkBlack px-4 py-2 rounded-2xl shadow-comic-sm font-cartoon text-base text-kawaiiPink">
               XP LOOT: +100,000 XP
@@ -280,16 +275,16 @@
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4 font-body text-sm font-bold text-slate-800">
             <div class="p-4 bg-white rounded-2xl border-3 border-inkBlack shadow-comic-sm">
-              🚀 <strong class="text-kawaiiPurple">Microservices Capacity:</strong> Scaled transaction microservices using Spring Boot, generating a <span class="bg-kawaiiYellow px-1.5 py-0.5 border-2 border-inkBlack rounded-lg">+25% system throughput lift</span>![cite: 1]
+              🚀 <strong class="text-kawaiiPurple">Microservices Capacity:</strong> Scaled transaction microservices using Spring Boot, generating a <span class="bg-kawaiiYellow px-1.5 py-0.5 border-2 border-inkBlack rounded-lg">+25% system throughput lift</span>!
             </div>
             <div class="p-4 bg-white rounded-2xl border-3 border-inkBlack shadow-comic-sm">
-              ⚡ <strong class="text-kawaiiPurple">Fast REST APIs:</strong> Built responsive RESTful endpoints, cutting partner integration latency by <span class="bg-kawaiiCyan px-1.5 py-0.5 border-2 border-inkBlack rounded-lg">20%</span>.[cite: 1]
+              ⚡ <strong class="text-kawaiiPurple">Fast REST APIs:</strong> Built responsive RESTful endpoints, cutting partner integration latency by <span class="bg-kawaiiCyan px-1.5 py-0.5 border-2 border-inkBlack rounded-lg">20%</span>.
             </div>
             <div class="p-4 bg-white rounded-2xl border-3 border-inkBlack shadow-comic-sm">
-              🧙‍♀️ <strong class="text-kawaiiPurple">SQL Tuning:</strong> Optimized Oracle SQL queries and execution plans, reducing response times by <span class="bg-kawaiiPink text-white px-1.5 py-0.5 border-2 border-inkBlack rounded-lg">30%</span>.[cite: 1]
+              🧙‍♀️ <strong class="text-kawaiiPurple">SQL Tuning:</strong> Optimized Oracle SQL queries and execution plans, reducing response times by <span class="bg-kawaiiPink text-white px-1.5 py-0.5 border-2 border-inkBlack rounded-lg">30%</span>.
             </div>
             <div class="p-4 bg-white rounded-2xl border-3 border-inkBlack shadow-comic-sm">
-              🛡️ <strong class="text-kawaiiPurple">Outage Mitigation:</strong> Investigated production issues with root cause analysis (RCA), dropping critical defects by <span class="bg-kawaiiGreen px-1.5 py-0.5 border-2 border-inkBlack rounded-lg">35%</span>.[cite: 1]
+              🛡️ <strong class="text-kawaiiPurple">Outage Mitigation:</strong> Investigated production issues with root cause analysis (RCA), dropping critical defects by <span class="bg-kawaiiGreen px-1.5 py-0.5 border-2 border-inkBlack rounded-lg">35%</span>.
             </div>
           </div>
         </div>
@@ -299,8 +294,8 @@
           <div class="flex flex-col sm:flex-row justify-between sm:items-center gap-3 border-b-3 border-inkBlack pb-4">
             <div>
               <span class="bg-kawaiiOrange text-white text-xs font-bold px-3 py-1 rounded-xl border-2 border-inkBlack shadow-comic-sm">MISSION CONQUERED</span>
-              <h3 class="font-cartoon text-2xl sm:text-3xl text-inkBlack mt-2">SBI Card &bull; Sales24 Platform (via TCS)</h3>[cite: 1]
-              <p class="font-bold text-xs text-slate-600 font-mono">Jul 2021 – Aug 2025 &bull; Java Backend Developer</p>[cite: 1]
+              <h3 class="font-cartoon text-2xl sm:text-3xl text-inkBlack mt-2">SBI Card &bull; Sales24 Platform (via TCS)</h3>
+              <p class="font-bold text-xs text-slate-600 font-mono">Jul 2021 – Aug 2025 &bull; Java Backend Developer</p>
             </div>
             <div class="bg-white border-3 border-inkBlack px-4 py-2 rounded-2xl shadow-comic-sm font-cartoon text-base text-kawaiiOrange">
               XP LOOT: +85,000 XP
@@ -309,16 +304,16 @@
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4 font-body text-sm font-bold text-slate-800">
             <div class="p-4 bg-white rounded-2xl border-3 border-inkBlack shadow-comic-sm">
-              💳 <strong class="text-kawaiiOrange">Onboarding Core:</strong> Engineered backend pipelines for customer onboarding, biometric KYC, and automated CIBIL score verification.[cite: 1]
+              💳 <strong class="text-kawaiiOrange">Onboarding Core:</strong> Engineered backend pipelines for customer onboarding, biometric KYC, and automated CIBIL score verification.
             </div>
             <div class="p-4 bg-white rounded-2xl border-3 border-inkBlack shadow-comic-sm">
-              🔐 <strong class="text-kawaiiOrange">Zero-Trust Shield:</strong> Secured applications using Spring Security with JWT authentication and strict Role-Based Access Control (RBAC).[cite: 1]
+              🔐 <strong class="text-kawaiiOrange">Zero-Trust Shield:</strong> Secured applications using Spring Security with JWT authentication and strict Role-Based Access Control (RBAC).
             </div>
             <div class="p-4 bg-white rounded-2xl border-3 border-inkBlack shadow-comic-sm">
-              🛠 <strong class="text-kawaiiOrange">Stability Boost:</strong> Resolved critical ETQ and SYNC sync bottlenecks, elevating overall platform stability by <span class="bg-kawaiiYellow px-1.5 py-0.5 border-2 border-inkBlack rounded-lg">30%</span>.[cite: 1]
+              🛠 <strong class="text-kawaiiOrange">Stability Boost:</strong> Resolved critical ETQ and SYNC sync bottlenecks, elevating overall platform stability by <span class="bg-kawaiiYellow px-1.5 py-0.5 border-2 border-inkBlack rounded-lg">30%</span>.
             </div>
             <div class="p-4 bg-white rounded-2xl border-3 border-inkBlack shadow-comic-sm">
-              🏎️ <strong class="text-kawaiiOrange">Database Tuning:</strong> Tuned SQL queries and Hibernate mappings, resulting in <span class="bg-kawaiiCyan px-1.5 py-0.5 border-2 border-inkBlack rounded-lg">30%+ faster responses</span>.[cite: 1]
+              🏎️ <strong class="text-kawaiiOrange">Database Tuning:</strong> Tuned SQL queries and Hibernate mappings, resulting in <span class="bg-kawaiiCyan px-1.5 py-0.5 border-2 border-inkBlack rounded-lg">30%+ faster responses</span>.
             </div>
           </div>
         </div>
@@ -343,7 +338,7 @@
           </div>
           <h3 class="font-cartoon text-2xl text-inkBlack">BACKEND CORE</h3>
           <p class="font-bold text-xs text-slate-700 leading-relaxed">
-            Java 17/21, Spring Boot 3, Microservices Architecture, Apache Kafka, REST APIs, Hibernate, Spring Data JPA, OOPs Design.[cite: 1]
+            Java 17/21, Spring Boot 3, Microservices Architecture, Apache Kafka, REST APIs, Hibernate, Spring Data JPA, OOPs Design.
           </p>
         </div>
 
@@ -353,7 +348,7 @@
           </div>
           <h3 class="font-cartoon text-2xl text-inkBlack">SECURITY & CACHING</h3>
           <p class="font-bold text-xs text-slate-700 leading-relaxed">
-            Spring Security, JWT Token Gating, Redis Distributed Caching, Oracle SQL Optimization, MySQL, Database Indexing.[cite: 1]
+            Spring Security, JWT Token Gating, Redis Distributed Caching, Oracle SQL Optimization, MySQL, Database Indexing.
           </p>
         </div>
 
@@ -363,7 +358,7 @@
           </div>
           <h3 class="font-cartoon text-2xl text-inkBlack">DEVOPS & CLOUD</h3>
           <p class="font-bold text-xs text-slate-700 leading-relaxed">
-            Docker, Kubernetes, Jenkins CI/CD, AWS Cloud, Git, GitHub, Maven, Postman, JUnit, Mockito, Production RCA.[cite: 1]
+            Docker, Kubernetes, Jenkins CI/CD, AWS Cloud, Git, GitHub, Maven, Postman, JUnit, Mockito, Production RCA.
           </p>
         </div>
 
@@ -379,27 +374,35 @@
         LET'S SHIP SOME AWESOME CODE TOGETHER!
       </h2>
       <p class="font-bold text-slate-800 max-w-xl mx-auto text-base">
-        Looking for a top-tier Senior Java Backend Developer to build high-scale microservices? Ping me anytime![cite: 1]
+        Looking for a top-tier Senior Java Backend Developer to build high-scale microservices? Ping me anytime!
       </p>
 
       <div class="flex flex-wrap justify-center gap-4 pt-2">
         <a href="mailto:babitay466@gmail.com" class="squishy-btn px-7 py-4 bg-kawaiiPink text-white text-xl flex items-center gap-2">
-          <i class="fa-solid fa-envelope"></i> babitay466@gmail.com[cite: 1]
+          <i class="fa-solid fa-envelope"></i> babitay466@gmail.com
         </a>
         <a href="tel:+918928912724" class="squishy-btn px-7 py-4 bg-kawaiiCyan text-inkBlack text-xl flex items-center gap-2">
-          <i class="fa-solid fa-phone"></i> +91-8928912724[cite: 1]
+          <i class="fa-solid fa-phone"></i> +91-8928912724
         </a>
       </div>
 
       <div class="pt-6 font-mono font-bold text-xs text-slate-700">
-        &copy; 2026 BABITA YADAV &bull; 5+ YEARS JAVA BACKEND ARCHITECT &bull; MUMBAI, MH, INDIA[cite: 1]
+        &copy; 2026 BABITA YADAV &bull; 5+ YEARS JAVA BACKEND ARCHITECT &bull; MUMBAI, MH, INDIA
       </div>
     </footer>
 
   </main>
 
-  <!-- Interactive Floating Physics Emojis Script -->
   <script>
+    // Automatic Text Scrubber
+    window.addEventListener("DOMContentLoaded", () => {
+      const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+      let node;
+      while (node = walker.nextNode()) {
+        node.nodeValue = node.nodeValue.replace(/\/gi, '');
+      }
+    });
+
     const emojiList = ['🚀', '⚡', '💻', '🎮', '☕', '👾', '🍕', '🌟', '🦄', '🔥', '🎉'];
     const container = document.getElementById('emojiPlayground');
     const emojis = [];
